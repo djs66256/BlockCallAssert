@@ -45,6 +45,8 @@ struct Descriptor {
     void (*dispose)(const void *);
 };
 
+/*
+// do we need copy?
 void block_call_assert_wrap_copy(void *dst, const void *src) {
     struct Block_layout *dstBlock = (struct Block_layout *)dst;
     struct Block_layout *srcBlock = (struct Block_layout *)src;
@@ -57,6 +59,7 @@ void block_call_assert_wrap_copy(void *dst, const void *src) {
     memcpy(buf, srcBlock->message, len);
     dstBlock->message = buf;
 }
+ */
 
 void block_call_assert_wrap_dispose(const void * ptr) {
     struct Block_layout *self = (struct Block_layout *)ptr;
@@ -82,7 +85,7 @@ void block_call_assert_wrap_dispose(const void * ptr) {
 static const struct Descriptor descriptor = {
     0,
     sizeof(struct Block_layout),
-    block_call_assert_wrap_copy,
+    NULL,
     block_call_assert_wrap_dispose
 };
 
