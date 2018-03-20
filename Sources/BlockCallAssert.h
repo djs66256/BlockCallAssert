@@ -15,7 +15,7 @@
 extern "C" {
 #endif
     
-void *block_call_assert_wrap_block(const void *orig_blk, const char *message);
+void *block_call_assert_wrap_block(void *orig_blk, char *message);
 
 typedef void (*block_call_assert_expcetion_handler_t)(const char *);
 void block_call_assert_set_exception_handler(block_call_assert_expcetion_handler_t handler);

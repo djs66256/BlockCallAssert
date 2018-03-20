@@ -14,7 +14,6 @@
 		BE65E5C320611F0C00B0B836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE65E5C220611F0C00B0B836 /* Assets.xcassets */; };
 		BE65E5C620611F0C00B0B836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE65E5C420611F0C00B0B836 /* LaunchScreen.storyboard */; };
 		BE65E5C920611F0C00B0B836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE65E5C820611F0C00B0B836 /* main.m */; };
-		BE65E5D620612B1400B0B836 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE65E5D520612B1400B0B836 /* libc++.tbd */; };
 		BE65E5DA20612C5C00B0B836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE65E5D920612C5C00B0B836 /* Foundation.framework */; };
 		BE65E5DC20612C7100B0B836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE65E5DB20612C7100B0B836 /* UIKit.framework */; };
 /* End PBXBuildFile section */
@@ -33,8 +32,6 @@
 		BE65E5C520611F0C00B0B836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE65E5C720611F0C00B0B836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE65E5C820611F0C00B0B836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BE65E5D520612B1400B0B836 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		BE65E5D720612B2000B0B836 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		BE65E5D920612C5C00B0B836 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE65E5DB20612C7100B0B836 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -46,7 +43,6 @@
 			files = (
 				BE65E5DC20612C7100B0B836 /* UIKit.framework in Frameworks */,
 				BE65E5DA20612C5C00B0B836 /* Foundation.framework in Frameworks */,
-				BE65E5D620612B1400B0B836 /* libc++.tbd in Frameworks */,
 				5DBACA1B01AF9858F31844E3 /* libPods-BlockCallAssert.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,8 +55,6 @@
 			children = (
 				BE65E5DB20612C7100B0B836 /* UIKit.framework */,
 				BE65E5D920612C5C00B0B836 /* Foundation.framework */,
-				BE65E5D720612B2000B0B836 /* libc++abi.tbd */,
-				BE65E5D520612B1400B0B836 /* libc++.tbd */,
 				0C7B62260765E1F7FB357BC3 /* libPods-BlockCallAssert.a */,
 			);
 			name = Frameworks;

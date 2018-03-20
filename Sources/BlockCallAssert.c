@@ -87,7 +87,7 @@ static const struct Descriptor descriptor = {
 extern void *_NSConcreteMallocBlock[32];
 extern void block_call_assert_wrap_invoke(void *p);
 
-void *block_call_assert_wrap_block(const void *orig_blk, const char *message) {
+void *block_call_assert_wrap_block(void *orig_blk, char *message) {
     struct Block_layout *block = (struct Block_layout *)malloc(sizeof(struct Block_layout));
     block->isa = _NSConcreteMallocBlock;
     
