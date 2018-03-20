@@ -50,6 +50,8 @@ void block_call_assert_wrap_copy(void *dst, const void *src) {
     struct Block_layout *srcBlock = (struct Block_layout *)src;
     memcpy(dst, src, sizeof(struct Block_layout));
     
+    dstBlock->block = Block_copy(srcBlock->block);
+    
     size_t len = sizeof(srcBlock->message)*sizeof(char);
     char *buf = (void *)malloc(len);
     memcpy(buf, srcBlock->message, len);
