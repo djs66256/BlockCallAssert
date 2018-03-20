@@ -15,10 +15,10 @@
 extern "C" {
 #endif
     
-void *block_call_assert_wrap_block(void *orig_blk, char *message);
+extern void *block_call_assert_wrap_block(void *orig_blk, char *message);
 
 typedef void (*block_call_assert_expcetion_handler_t)(const char *);
-void block_call_assert_set_exception_handler(block_call_assert_expcetion_handler_t handler);
+extern void block_call_assert_set_exception_handler(block_call_assert_expcetion_handler_t handler);
 
 #define BLOCK_CALL_ASSERT(x) ({                 \
     typeof ((x)) blk = x;                       \
