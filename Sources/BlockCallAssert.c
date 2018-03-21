@@ -31,7 +31,12 @@
 #include <string.h>
 #include <Block.h>
 
-#if __x86_64__ || __arm__ || __arm64__
+static block_call_assert_expcetion_handler_t exception_handler;
+void block_call_assert_set_exception_handler(block_call_assert_expcetion_handler_t handler) {
+    exception_handler = handler;
+}
+
+#if __x86_64__ || __arm64__
 
 #define WRAP_BLOCK_LOG_ENABLE false
 #if WRAP_BLOCK_LOG_ENABLE
@@ -39,11 +44,6 @@
 #else
 #define WRAP_BLOCK_LOG(...)
 #endif
-
-static block_call_assert_expcetion_handler_t exception_handler;
-void block_call_assert_set_exception_handler(block_call_assert_expcetion_handler_t handler) {
-    exception_handler = handler;
-}
 
 struct Block_layout {
     void *isa;
@@ -139,7 +139,7 @@ void *block_call_assert_wrap_block(void *orig_blk, char *message) {
 }
 #else
 void *block_call_assert_wrap_block(void *orig_blk, char *message) {
-    // we don't support i386
+    // we don't support i386 & arm32
     return orig_blk;
 }
 #endif
