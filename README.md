@@ -23,7 +23,7 @@ block_call_assert_set_exception_handler(exception_log);
 
 #### Wrap your completion blocks
 
-```oc
+```objc
 - (void)doAsyncWithCompletion:(block_t)completionBlock {
   dispatch_async(..., ^{
 //      completionBlock(...)
