@@ -22,6 +22,7 @@
 		0C7B62260765E1F7FB357BC3 /* libPods-BlockCallAssert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockCallAssert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EE13901FBFD05D8F4BBDDE /* Pods-BlockCallAssert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockCallAssert.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockCallAssert/Pods-BlockCallAssert.release.xcconfig"; sourceTree = "<group>"; };
 		A7AE05063230357B2DBBBBEC /* Pods-BlockCallAssert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockCallAssert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockCallAssert/Pods-BlockCallAssert.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2492C32062100500B47B3B /* libBlockCallAssert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBlockCallAssert.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65E5B620611F0C00B0B836 /* BlockCallAssert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockCallAssert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65E5B920611F0C00B0B836 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE65E5BA20611F0C00B0B836 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		939CC7D53F58478A13F080DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE2492C32062100500B47B3B /* libBlockCallAssert.a */,
 				BE65E5DB20612C7100B0B836 /* UIKit.framework */,
 				BE65E5D920612C5C00B0B836 /* Foundation.framework */,
 				0C7B62260765E1F7FB357BC3 /* libPods-BlockCallAssert.a */,
@@ -366,12 +368,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BlockCallAssert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.BlockCallAssert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -381,12 +386,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BlockCallAssert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.BlockCallAssert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

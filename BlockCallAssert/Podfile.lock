@@ -1,5 +1,5 @@
 PODS:
-  - BlockCallAssert (0.0.3)
+  - BlockCallAssert (0.0.4)
 
 DEPENDENCIES:
   - BlockCallAssert (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BlockCallAssert: d14761836d6320613fa16331d98aee8e0482a8cf
+  BlockCallAssert: a49d8bf1e558dceea226392f9101566d0ed73989
 
 PODFILE CHECKSUM: be69eaadc65f5a332933e24bdb60556700ff0aee
 
