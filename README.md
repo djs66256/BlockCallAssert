@@ -5,7 +5,7 @@ When callback block is NEVER called, throw an exception.
 
 #### Set exception handler
 
-```oc
+```objc
 void exception_log(const char *str) {
     NSLog(@"%s", str);
 }
@@ -14,7 +14,7 @@ block_call_assert_set_exception_handler(exception_log);
 
 or NSException maybe better for you.
 
-```oc
+```objc
 void exception_log(const char *str) {
     [NSException raise:@"BlockNotCallException" format:@"%s", msg];
 }
@@ -42,7 +42,7 @@ Then if you dont call `completionBlock()`, it will handle an exception.
 
 Maybe you need debug env.
 
-```
+```objc
 #if DEBUG
 #import <BlockCallAssert/BlockCallAssert.h>
 #define YourBlockCallAssert(x) BLOCK_CALL_ASSERT(x)
