@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BlockCallAssert"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "When callback block is NEVER called, throw an exception."
 
   # This description is used to generate tags and improve search results.

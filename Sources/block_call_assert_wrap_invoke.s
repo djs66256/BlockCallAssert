@@ -33,9 +33,9 @@ mov x12, #1
 str x12, [x11]
 
 ldr x12, [x10]        // block
+mov x0, x12
 add x12, x12, #0x10 // block->invoke
 ldr x12, [x12]
-mov x0, x11
 
 br x12
 ret
